@@ -1,3 +1,4 @@
+//ejercicio asistencia
 var nombre = "Luciano";
 
 let apellido = "Riveros";
