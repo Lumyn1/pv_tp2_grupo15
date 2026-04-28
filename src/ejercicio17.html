@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 17 - Contar Letra A</title>
+</head>
+<body>
+    <h1>Contador de letras "A"</h1>
+
+    <script>
+        const contarLetraA = (texto) => {
+            let contador = 0;
+
+            // Recorremos el string letra por letra
+            for (let letra of texto) {
+                // Comparamos si es 'a' minúscula o 'A' mayúscula
+                if (letra === 'a' || letra === 'A') {
+                    contador++;
+                }
+            }
+            return contador;
+        };
+
+
+        const palabraUsuario = prompt("Ingresá una palabra o frase:");
+
+          //Llamamos a la función y guardamos el resultado
+        const cantidad = contarLetraA(palabraUsuario);
+
+        // Mostramos el resultado
+        document.write(`
+            <p>Frase ingresada: "<strong>${palabraUsuario}</strong>"</p>
+            <h2>La letra 'a' aparece ${cantidad} veces.</h2>
+        `);
+    </script>
+</body>
+</html>
