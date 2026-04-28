@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Consumo de Combustible</title>
+</head>
+<body>
+    <h1>Calculadora de Consumo de Combustible</h1>
+
+    <script>
+        // Usamos Number() para convertir el texto del prompt en un número real
+        const kilometros = Number(prompt("Ingresá el número de kilómetros recorridos:"));
+        const litros = Number(prompt("Ingresá el número de litros consumidos:"));
+
+        const consumoPorKm = litros / kilometros;
+
+        // Usamos .toFixed(2) para que solo muestre 2 decimales y no un número infinito
+        document.write(`
+            <section>
+                <p>Kilómetros recorridos: <strong>${kilometros} km</strong></p>
+                <p>Litros consumidos: <strong>${litros} L</strong></p>
+                <hr>
+                <h2>El consumo es de: ${consumoPorKm.toFixed(2)} litros por cada kilómetro.</h2>
+            </section>
+        `);
+
+        // También lo mandamos a la consola para verificar
+        console.log(`Cálculo finalizado: ${consumoPorKm} L/km`);
+    </script>
+</body>
+</html>
