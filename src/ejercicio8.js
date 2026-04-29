@@ -52,3 +52,4 @@ console.log("Aprobados: "+contaraprobados(notas))
 console.log("Desaprobados: "+contardesaprobados(notas))
 console.log("El promedio es: "+promedio(notas));
 console.log("La cantidad de aprobados son: "+contar_cantaprobados(notas));
+console.log("La cantidad de aprobados son: "+contar_cantaprobados(notas));
