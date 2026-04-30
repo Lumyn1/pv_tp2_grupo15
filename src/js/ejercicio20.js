@@ -1,1 +1,1 @@
-import { servicioTobiasTorres } from "../serviceTobiasTorres.js";
+import { servicioTobiasTorres } from "../services/serviceTobiasTorres.js";
