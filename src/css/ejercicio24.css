@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbdbbb;
+    padding: 30px;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    background-color: rgb(182, 182, 116);
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.opciones {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.opciones label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#mensaje {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000000;
+    background-color: antiquewhite;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: inline-block;
+}
+.opciones input[type="radio"] {
+  display: none; 
+}
+
+.opciones label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.opciones label:hover {
+  background-color: #bbb;
+}
+
+.opciones input[type="radio"]:checked + label {
+  background-color: #4CAF50;
+  color: white;
+}
